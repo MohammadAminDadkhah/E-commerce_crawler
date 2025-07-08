@@ -40,5 +40,3 @@ match site:
 if products:
     with open(f"data/{keyword}.json", "a+", encoding="utf-8") as f:
         json.dump(products, f, ensure_ascii=False, indent=4)
-else:
-    print("No products found.")
